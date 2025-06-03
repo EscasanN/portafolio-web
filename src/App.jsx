@@ -4,37 +4,43 @@ function App() {
   const descriptions = [
     "Bienvenidos a mi portafolio. Cambia a la siguiente cancion para aprender mas sobre mi    ----->",
     "Me llamo Nelson Escalante. Soy estudiante de Ing. en Ciencias de la Computacion y soy apasionado por la musica. Ahora mismo estas escuchando mi cancion favorita: Cementerio Club",
-    "Toco varios instrumentos: piano, guitarra, bajo y marimba!"
+    "Toco varios instrumentos: piano, guitarra, bajo y marimba!",
+    "Ademas de los instrumentos, mi otro hobby son los videojuegos. Mis videojuegos favoritos son: Terraria, Spelunky, Enter the Gungeon y Civilization VI."
   ]
 
   const songTitle = [
     "Cats in mars",
     "Cementerio Club",
-    "El Valle de la Esmeralda"
+    "El Valle de la Esmeralda",
+    "Jungle C"
   ]
 
   const songArtist = [
     "Seatbelts",
     "Pescado Rabioso",
-    "Marimba Estrella de Guatemala"
+    "Marimba Estrella de Guatemala",
+    "Eirik Suhrke"
   ]
 
   const images = [
     "/src/assets/cats_on_mars.jpg",
     "/src/assets/cementerio_club.jpg",
-    "/src/assets/valle_de_la_esmeralda.jpg"
+    "/src/assets/valle_de_la_esmeralda.jpg",
+    "/src/assets/jungle_c.jpg"
   ]
 
   const altText = [
     "Cats On Mars - Seatbelts",
     "Cementerio Club - Pescado Rabioso",
-    "El Valle de la Esmeralda - Marimba Estrella de Guatemala"
+    "El Valle de la Esmeralda - Marimba Estrella de Guatemala",
+    "Jungle C - Eirik Surhke"
   ]
 
   const songs = [
     "/src/assets/cats_on_mars.mp3",
     "/src/assets/cementerio_club.mp3",
-    "/src/assets/valle_de_la_esmeralda.mp3"
+    "/src/assets/valle_de_la_esmeralda.mp3",
+    "/src/assets/jungle_c.mp3"
   ]
 
   const themes = [
@@ -49,6 +55,10 @@ function App() {
     {
       backgroundColor: '#D1E7F2',
       textColor: '#2B3236'
+    },
+    {
+      backgroundColor: '#FFFFFF',
+      textColor: '#251436'
     }
   ]
 
@@ -107,11 +117,12 @@ function App() {
       }}
     >
       <div style={{
-        padding: '40px 20px',
+        padding: '0 20px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        minHeight: '100vh',
+        justifyContent: 'center',
+        height: '100vh',
         boxSizing: 'border-box'
       }}>
         
@@ -142,8 +153,8 @@ function App() {
               src={images[index]} 
               alt={altText[index]} 
               style={{ 
-                width: "80px",
-                height: "80px",
+                width: "130px",
+                height: "130px",
                 borderRadius: '8px',
                 objectFit: 'cover',
                 boxShadow: '0 2px 10px rgba(0,0,0,0.3)' 
